@@ -22,9 +22,7 @@ function newsletter_posts($data) {
     
     // get the post
     $tag = urldecode($data['tag']);
-    //echo $tag;
     $getIndex = $data['index']-1;
-    //$client->setDataType(new Posts($tag, $data['index']));
     $client->setDataType(new Posts($tag, $getIndex));
     $posts = $client->getDataType();
 
