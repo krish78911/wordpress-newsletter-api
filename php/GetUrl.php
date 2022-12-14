@@ -8,7 +8,7 @@ class GetUrl implements ParameterInterface { // return url
     public $url;
 
     function __construct($posts) {
-        $this->url = "http://localhost/magazin/".$posts[0]->post_name;
+        $this->url = "https://www.babyartikel.de/magazin/".$posts[0]->post_name;
     }
 
     function getData() {
